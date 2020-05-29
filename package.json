@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
+  "engines": {
+    "node": ">=14"
   },
-  "author": "",
+  "scripts": {
+    "test": "npx -n --experimental-vm-modules jest"
+  },
+  "author": "Michael Lyalin",
   "license": "ISC",
+  "type": "module",
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {}
+  },
+  "dependencies": {
+    "@jest/globals": "^26.0.1"
+  },
   "devDependencies": {
-    "@babel/core": "^7.8.6",
-    "@babel/preset-env": "^7.8.6",
-    "babel-jest": "^25.1.0",
-    "jest": "^25.1.0"
+    "jest": "^26.0.1"
   }
 }

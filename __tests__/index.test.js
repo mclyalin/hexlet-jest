@@ -1,4 +1,5 @@
-import reverse from '../src/index.js';
+import { test, expect } from '@jest/globals';
+import reverse from '../index.js';
 
 test('reverse', () => {
   expect(reverse('hello')).toEqual('olleh');
